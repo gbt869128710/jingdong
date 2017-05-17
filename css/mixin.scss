@@ -1,0 +1,30 @@
+@mixin br4($val:4px) {
+    border-radius: $val;
+    -moz-border-radius: $val;
+    -webkit-border-radius: $val;
+    -o-border-radius: $val;
+    -ms-border-radius: $val;
+}
+
+
+/*border-radius*/
+
+@mixin b {
+    width: 23px;
+    height: 23px;
+    background: url("../imges/logo.png") no-repeat center top;
+}
+
+
+/*logo size*/
+
+@mixin br( $der1,
+$der2,
+$val:4px) {
+    border-radius: $val;
+    -moz-border-radius: $val;
+    -webkit-border-radius: $val;
+    -o-border-radius: $val;
+    -ms-border-radius: $val;
+    border-#{$der1}-#{$der2}-radius: 4px;
+}
